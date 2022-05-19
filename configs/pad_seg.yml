@@ -1,0 +1,7 @@
+DATA:
+  PADDING: 32
+SOLVER:
+  TYPE: 'Adam'
+  BASE_LR: 0.01 #0.005
+MODEL:
+  REC: False

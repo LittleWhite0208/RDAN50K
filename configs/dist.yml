@@ -1,0 +1,28 @@
+﻿LABEL_TYPE:
+  CRACK: 'Bad_BlockPos'
+  REPAIR: 'Bad_RepairBlockPos'
+SOLVER:
+  TYPE: 'Adam'
+  BASE_LR: 0.0001 #0.005
+MODEL:
+  REC: False
+TRAIN:
+  IMG_BLOCK_H: 22
+  IMG_BLOCK_W: 34
+  RAW_IMAGE_ROWS: 2200
+  RAW_IMAGE_COLS: 3400
+  SHRINK_IMG_H: 704
+  SHRINK_IMG_W: 1088
+  SNAPSHOT_ITERS: 2000
+  EVAL: True
+TASK:
+  TRAIN_FILE: '/home/chenyudong/CrackForest-dataset-master-数据集/K-folds/CFD-train-4.txt'
+  VAL_FILE: '/home/chenyudong/CrackForest-dataset-master-数据集/K-folds/CFD-test-4.txt'
+  #PLAN: [[0,0.3],[1,0.5],[2,0.2]]
+  BATCHSIZE: 10
+dist_backend: 'nccl'
+dist_url: 'tcp://localhost:23455'
+rank: 0
+world_size: 1
+lr: 0.0001
+save_modelpath: '/home/public/rmt/cyd/裂缝精修数据集/MODELS/ResNet50-cr-20220330-batch=10-CFD-fold-4'

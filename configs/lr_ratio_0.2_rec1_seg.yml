@@ -1,0 +1,11 @@
+SOLVER:
+  TYPE: 'Adam'
+  BASE_LR: 0.01 #0.005
+MODEL:
+  REC: True
+TRAIN:
+  SNAPSHOT_ITERS: 2000
+  EVAL: True
+  REC_WEIGHT: 0.2
+  LR_RATIO: .1
+  LOSS: '1'

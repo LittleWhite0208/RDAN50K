@@ -1,0 +1,3 @@
+机器号,比例,gpu个数,训练数据,验证数据文件
+1,0.3,2,/home/xgs/train.txt,/home/xgs/val.txt
+2,0.7,4,/home/xgs/train.txt,/home/xgs/val.txt
